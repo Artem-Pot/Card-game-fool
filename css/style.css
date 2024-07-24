@@ -29,13 +29,34 @@
   font-size: 20px;
   padding: 5px;
   background-color: #fff;
+  letter-spacing: 3px;
 }
 
 .user__card {
   cursor: pointer;
 }
 
+
 .deck__box {
+  position: relative;
+  background-color: rgb(50, 218, 134);
+  width: 200px;
+  height: 200px;
+  align-self: flex-end;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+
+.deck__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+.deck__deck-card {
   position: absolute;
   top: calc(50% - 35px);
   right: 10vw;
@@ -55,5 +76,5 @@
   transform: rotate(-90deg);
   top: 50px;
   background: rgb(2,0,36);
-  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(247,247,247,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(55deg, rgba(2,0,36,1) 0%, rgba(247,247,247,1) 50%, rgb(247, 60, 60) 100%);
 }
