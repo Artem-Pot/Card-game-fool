@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgb(47, 155, 5);
+  padding: 10px;
+  position: relative;
+}
+
+.user__deck-card, .comp__deck-card {
+  display: flex;
+  gap: 5px;
+}
+
+.user__card, .comp__card, .deck__card {
+  width: 70px;
+  height: 100px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.user__card {
+  cursor: pointer;
+}
+
+.deck__box {
+  position: absolute;
+  top: calc(50% - 35px);
+  right: 10vw;
+  transform: rotate(-90deg);
+}
+
+.card_heart {
+  color: red;
+}
+
+.card_peak {
+  color: black;
+}
+
+.cart_shirt {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 50px;
+  background: rgb(2,0,36);
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(247,247,247,1) 35%, rgba(0,212,255,1) 100%);
+}
